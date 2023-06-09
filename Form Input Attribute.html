@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+              <meta charset="UTF-8">
+              <meta http-equiv="X-UA-Compatible" content="IE=edge">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Input Attributes
+
+              </title>
+</head>
+<body>
+
+              <!-- NAME ATTRIBUTE -->
+
+              <form id="form-control" action="Form_submit.html" method="get" target="_blank">
+
+                            <label>First Name: </label>
+                            <input type="text" name="FirstName">
+                            <br><br>
+                            
+              <!-- VALUE ATTRIBUTE -->
+
+                            <label> Last Name</label>
+                            <input type="text" name="LastName" value="THIS IS MY LAST NAME">
+                            <br><br>
+
+                            <input type="reset" value="Reset"><br><br>
+
+              <!-- REQUIRED ATTRIBUTE -->
+              
+                            <label>Username</label>
+                            <input type="text" name="username" required><br><br>
+
+              <!-- AUTOFOCUS ATTRIBUTE -->
+
+                            <label>Fathers Name</label>
+                            <input type="text" name="fathername" autofocus>
+                            <br><br>
+
+              <!-- PLACEHOLDER ATTRIBUTE -->
+                        
+                            <LABEL>Contact Number</LABEL>
+                            <input type="tel" name="contactnumber" pattern="[0-9]{3}-[0-9]{30}-[0-9]{4}" placeholder="Format: 123-123-1234">
+                            <br><br>
+
+              <!-- DISABLED ATTRIBUTE -->
+                             
+                            <label>Don't Fill</label>
+                            <input type="text" name="dontfill" value="Disabled button" disabled>
+                            <br><br>
+
+              <!-- SIZE ATTRIBUTE -->
+                            
+                           <label>Occupation</label>
+                           <input type="text" name="occupation" size="8">
+                           <br><br>
+                           
+                           <input type="submit" value="submit">
+
+              </form>
+              
+              <!-- FORM ATTRIBUTE -->
+                            <label>Email Id</label>
+                            <input type="email" name="email" form="form-control">
+
+                           
+                           
+
+             
+</body>
+</html>

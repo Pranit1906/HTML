@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+              <head>
+                            <title>KEYBOARD ATTRIBUTES</title>
+                            <script type="text/javascript">
+
+                                          function keyDown(){
+                                                        document.body.style.background= "yellow";
+                                          }
+
+                                          function keyPress(){
+                                                        document.body.style.background= "lightgreen";
+                                          }
+
+                                          function keyUp(){
+                                                        document.body.style.background= "cyan";
+                                          }
+
+                                          function myFunction(){
+                                                        alert("Button has been clicked");
+                                          }
+                                           
+                                          function MouseOverFunction(){
+                                                        document.body.style.background="cyan";
+                                          }
+
+                                          function MouseOutFunction(){
+                                                        document.body.style.background="white";
+                                          }
+
+                                          function MouseMoveFunction(){
+                                                        document.body.style.background="Lightgreen";
+                                          }
+
+                                          function MouseUpFunction(){
+                                                        document.body.style.background="Orange";
+                                          }
+                            </script>
+              </head>
+              <body>
+                            <!-- KEYBOARD ATTRIBUTES KEY UP DOWN PRESS -->
+
+                            <form action=" " method=" ">
+                                          
+                            <label>FIRST NAME:</label>
+                            <input type="text" name="firstName" onkeydown="keyDown()"><br><br>
+
+                            <label>LAST NAME:</label>
+                            <input type="text" name="lastName" onkeypress="keyPress()"><br><br>
+
+                            <label>CONTACT NUMBER:</label>
+                            <input type="text" name="contactNum" onkeyup="keyUp()"><br><br>
+
+                            </form>
+
+                            <!-- MOUSE ATTRIBUTES -->
+                            
+                            <form action=" " method=" ">
+                                          
+                                          <label onmousedown="myFunction()">FIRST NAME 1:</label>
+                                          <input type="text" name="firstName" onkeydown="keyDown()"><br><br>
+              
+                                          <!-- MOUSEOVER & MOUSEOUT EXAMPLE -->
+
+                                          <label onmouseover="MouseOverFunction()" onmouseout="MouseOutFunction()">LAST NAME1:</label>
+                                          <input type="text" name="lastName" onkeypress="keyPress()"><br><br>
+
+                                          <!-- MOUSEMOVE EXAMPLE -->
+
+                                          <label onmousemove="MouseMoveFunction()">CONTACT NUMBER1:</label>
+                                          <input type="text" name="contactNum" onkeyup="keyUp()"><br><br>
+
+                                          <!-- <input type="button" value="Click me!" onclick="click()"> -->
+
+                                          <!-- ONCLICK EXAMPLE -->
+
+                                          <button onclick="myFunction()">Click Me!</button><br><br>
+              
+                                          <!-- DBLCLICK EXAMPLE -->
+                                          
+                                          <button ondblclick="myFunction()">Click Me TOOO!!!!</button><br><br>
+
+                                          <!-- MOUSEDOWN EXAMPLE -->
+
+                                          <button onmousedown="myFunction()">Click Me DOwn!!</button><br><br>
+                                          
+                                          <!-- MOUSEUP EXAMPLE -->
+                                         
+                                          <button onmouseup="MouseUpFunction()">Click Me UP!!!!!</button>
+
+                                          </form>
+                            
+              </body>
+</html>
